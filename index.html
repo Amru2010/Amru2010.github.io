@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIITU LIBRARY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #faebd7;
+        }
+
+        .upar {
+            background-color: #e39600;
+            padding: 75px;
+            margin: 0px 0px 15px 0px;
+        }
+
+        .logo {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 0.5%;
+            top: 1.1%;
+            width: 55%;
+        }
+
+        .logo img {
+            box-sizing: border-box;
+            width: 98%;
+        }
+
+        .intro {
+            border: 2px solid black;
+            display: inline-block;
+            position: absolute;
+            right: 0.5%;
+            top: 3%;
+            width: 35%;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .rot {
+            background-color: #e39600;
+            /* margin: 7px 0px; */
+            /* padding: 1px 0px; */
+            font-size: 23px;
+            font-weight: bolder;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: relative;
+            bottom: 6px;
+        }
+
+        .rot img {
+            width: 32px;
+            height: 34px;
+            background: #e39600;
+            position: relative;
+            top: 11px;
+        }
+
+        ul .navbar {
+            display: block;
+        }
+
+        .navigation {
+            background-color: #ffffff;
+            margin: 5px 7px;
+            height: 50px;
+        }
+
+        .nav_social {
+            display: inline-block;
+            /* border: 2px solid red; */
+            margin-left: 10px;
+            position: relative;
+            bottom: 25.8%;
+        }
+
+        .navbar li {
+            display: inline-block;
+            padding: 5px 15px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #000000;
+            font-family: sans-serif;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .navbar li a:hover{
+            color: #e39600;
+            font-style: wavy;
+        }
+
+        .nav_user {
+            /* border: 2px solid rebeccapurple; */
+            display: inline-block;
+            position: relative;
+            left: 40%;
+            bottom: 26.8%;
+        }
+
+        .user {
+            display: inline-block;
+        }
+
+        .user li {
+            display: inline-block;
+            padding: 5px 15px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #000000;
+            font-family: sans-serif;
+        }
+
+        .user li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .user_btn {
+
+            background-color: #e39600;
+            border-radius: 250px;
+            box-shadow: #d18c02 0 -19px 18px -19px inset, #d18c02 0 2px 10px, #d18c02 0 4px 1px;
+            color: black;
+            cursor: pointer;
+            display: inline-block;
+            font-family: sans-serif;
+            padding: 7px 20px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 250ms;
+            border: 0;
+            font-size: 16px;
+        }
+
+        .user_btn:hover {
+            transform: scale(1.05) rotate(-1deg);
+        }
+
+        .backlib img {
+            width: 43%;
+            position: relative;
+            left: 3.2%;
+            top: 10px;
+            margin-bottom: 2%;
+            /* border: 2px red solid; */
+        }
+        h2{
+            font-size: 62px;
+            font-family: emoji;
+            margin-bottom: 28px;
+            margin-bottom: 28px;
+        }
+
+        .extra {
+            display: inline-block;
+            /* border: 2px solid green; */
+            position: absolute;
+            right: 1%;
+            top: 250px;
+            width: 50%;
+            padding-top: 50px;
+        }
+
+        .started li {
+            list-style: none;
+        }
+
+        #extra_point1 {
+            font-family: emoji;
+            color: #434040;
+            text-decoration: none;
+            text-align: left;
+            line-height: 31px;
+            letter-spacing: 0px;
+            font-weight: 600;
+            font-size: 24px;
+        }
+
+        #extra_point2 {
+            font-family: emoji;
+            color: #333333;
+            text-decoration: none;
+            white-space: normal;
+            line-height: 71px;
+            letter-spacing: 1px;
+            font-weight: 700;
+            font-size: 72px;
+        }
+
+        .sem1 {
+            display: inline-block;
+            margin: 8px 77px;
+            padding: 2px 2px;
+            background-color: #ffffff;
+            border: 2px solid #e39600;
+            width: 80%;
+            font-size: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        #info {
+            padding: 1px 0px;
+            font-size: 15px;
+            font-weight: bold;
+            color: rgb(44, 41, 41);
+        }
+
+        .sem li {
+            display: inline-block;
+            padding: 1px 0px;
+            font-size: 15px;
+            font-weight: 500;
+            position: relative;
+            left: 10px;
+            color: rgb(44, 41, 41);
+        }
+
+        .sem li a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+        }
+
+        .sem li a:hover {
+            text-decoration: underline;
+            color: #e39600;
+        }
+
+        #select_heading{
+            text-align: center;
+        }
+        #rom1{
+            padding-left: 6.72%;
+            padding-right: 3.167%;
+        }
+        #rom1:hover{
+            width: 370px;
+        }
+        #rom2{
+            padding-right: 4.987%;
+        }
+        #rom2:hover{
+            width: 310px;
+        }
+        #rom3{
+            padding-right: 7.045%;
+        }
+        #rom3:hover{
+            width: 325px;
+        }
+        #rom4:hover{
+            width: 235px;
+        }
+        #rom5{
+            padding-left: 83px;
+            padding-right: 46px;
+        }
+        #rom5:hover{
+            width: 370px;
+        }
+        #rom6{
+            padding-right: 58px;
+        }
+        #rom6:hover{
+            width: 288px;
+        }
+        #rom7{
+            padding-right: -32px;
+        }
+        #rom7:hover{
+            width: 333px;
+        }
+        #rom8:hover{
+            width: 369px;
+        }
+
+        #about_heading{
+            text-align: center;
+        }
+
+        </style>
+</head>
+
+<header class="upar" id="upar">
+    <div class="logo">
+        <img src="https://iiitu.ac.in/wp-content/uploads/2022/01/1logo-una.png" alt="IIITU Logo">
+    </div>
+    
+    <div class="intro">
+        IIIT Una Library Management
+    </div>
+    
+</header>
+
+<body>
+<div class="rot">
+    <marquee direction="left" class="rot"> | Your Sure Shot Solution For Library Related
+        Issues!! <img src="download.png"> | Saves energy and time and is also very convenient to use!! <img
+            src="download.png"> | </marquee>
+</div>
+
+<a name="Home">
+<section class="navigation">
+    <div class="nav_social">
+        <ul class="navbar">
+            <li class="menu">
+                <a class="nav_link" href="#Home">Home</a>
+            </li>
+            <li class="menu">
+                <a class="nav_link" href="#select_sem">Select Sem</a>
+            </li>
+            <li class="menu">
+                <a class="nav_link" href="#about_us">About Us</a>
+            </li>
+            <li class="menu">
+                <a class="nav_link" href="">Social Links</a>
+            </li>
+        </ul>
+    </div>
+    <div class="nav_user">
+        <ul class="user">
+            <li id="login">
+                <button class="user_btn">
+                    <a id="login_link" href="">Login</a>
+                </button>
+            </li>
+            <li id="register">
+                <button class="user_btn">
+                    <a id="login_register" href="">Register</a>
+                </button>
+            </li>
+        </ul>
+    </div>
+</section>
+</a>
+
+<div class="backlib">
+        <img src="download.jpg">
+</div>
+    <div class="extra">
+        <ul class="started">
+            <li id="extra_point1">
+                This is the best library management site
+            </li>
+            <li id="extra_point2">
+                Perfect place to seek Library related helps
+            </li>
+        </ul>
+    </div>
+
+<div class="select">
+    <a name="select_sem">
+        <h2 id="select_heading">Select Your Semester Below</h2>
+    </a>
+</div>
+
+<div class="Romans">
+    <a href="sem1.html"><img id="rom1" src="Roman_1.png" alt="Semester_1"></a>
+    <a href="sem2.html"><img id="rom2" src="Roman_2.png" alt="Semester_2"></a>
+    <a href="sem3.html"><img id="rom3" src="Roman_3.png" alt="Semester_3"></a>
+    <a href="sem4.html"><img id="rom4" src="Roman_4.png" alt="Semester_4"></a>
+</div>
+
+<div class="Romans">
+    <a href="sem5.html"><img id="rom5" src="Roman_5.png" alt="Semester_5"></a>
+    <a href="sem6.html"><img id="rom6" src="Roman_6.png" alt="Semester_6"></a>
+    <a href="sem7.html"><img id="rom7" src="Roman_7.png" alt="Semester_7"></a>
+    <a href="sem8.html"><img id="rom8" src="Roman_8.png" alt="Semester_8"></a>
+</div>
+
+<div class="about">
+    <a name="about_us">
+        <h2 id="about_heading">About Us</h2>
+    </a>
+</div>
+
+
+
+    </body>
+
+</html>
